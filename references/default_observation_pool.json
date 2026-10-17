@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "preset_id": "sse-market-observation-v2",
+  "as_of": "2026-10-14",
+  "description": "用于观察上交所主要ETF资金配置方向的默认研究池，不是上交所官方名单。",
+  "selection_note": "不纳入具体行业ETF；核心资金流向为A股宽基、科技宽基和红利风格，黄金和十年国债用于风险偏好辅助观察，港股宽基仅作跨境辅助信号。不同资产类别只分组比较，不直接汇总为一个总资金流。",
+  "funds": [
+    {"code": "510050", "name": "上证50ETF", "index": "上证50", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "510300", "name": "沪深300ETF（华泰柏瑞）", "index": "沪深300", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "510310", "name": "沪深300ETF（易方达）", "index": "沪深300", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "510330", "name": "沪深300ETF（华夏）", "index": "沪深300", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "563360", "name": "中证A500ETF", "index": "中证A500", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "510500", "name": "中证500ETF", "index": "中证500", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "512100", "name": "中证1000ETF", "index": "中证1000", "bucket": "A股宽基", "asset_class": "境内股票"},
+    {"code": "588000", "name": "科创50ETF", "index": "科创50", "bucket": "科技宽基", "asset_class": "境内股票"},
+    {"code": "510880", "name": "红利ETF", "index": "上证红利", "bucket": "红利风格", "asset_class": "境内股票"},
+    {"code": "512890", "name": "红利低波ETF", "index": "红利低波", "bucket": "红利风格", "asset_class": "境内股票"},
+    {"code": "510900", "name": "恒生中国企业ETF", "index": "恒生中国企业", "bucket": "港股宽基", "asset_class": "跨境股票"},
+    {"code": "518880", "name": "黄金ETF", "index": "国内黄金现货", "bucket": "黄金", "asset_class": "商品"},
+    {"code": "511260", "name": "十年国债ETF", "index": "十年期国债", "bucket": "国债", "asset_class": "固定收益"}
+  ]
+}
